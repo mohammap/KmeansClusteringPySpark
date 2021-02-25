@@ -1,0 +1,32 @@
+Static geographical information of CityBike‘s stations in Brisbane (“Brisbane_CityBike.json”)
+Table of Contents:
+ --Dataset
+ --schema
+ --Spatial Clustering
+ --Kmeans
+ --Elbow Method
+ --Observation & Comparisons
+
+Dataset:
+Brisbane Bike Map
+
+Schema:
+adress
+latitude
+longitude
+name
+number
+
+Clustering method:
+Using stations geo-information to do Kmeans clustering
+
+Kmeans:
+We will utilize KMeans function from pyspark.ml.clustering --> Parameters: k (Number of clusters)
+
+Elbow Method:
+The Elbow method is a method of interpretation and validation of consistency within cluster analysis designed to help finding the appropriate number of clusters in a dataset. This method looks at the percentage of variance explained as a function of the number of clusters: One should choose a number of clusters so that adding another cluster doesn’t give much better modeling of the data.
+
+Observations & comparisons:
+In my clustering code, I observed that with 2 clusters, I can have the best silhouette value which is a criterion for evaluating the performance of the clustering we've applied.
+
+
